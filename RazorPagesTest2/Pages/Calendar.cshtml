@@ -1,0 +1,71 @@
+﻿@page
+@model RazorPagesTest2.Pages.CalendarModel
+@{
+}
+
+<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+<link rel="stylesheet" href="/resources/demos/style.css">
+
+
+@using (Html.BeginForm(FormMethod.Post))
+{
+
+
+}
+
+<form method="post">
+    @Html.TextBoxFor(model => model.date, new { @id = "datepicker", name = "date", onChange = "this.form.submit()" })
+</form>
+
+
+
+<br />
+
+<table class="table">
+    <thead>
+        <tr>
+
+            <th>
+                @Html.DisplayNameFor(model => model.Movie[0].title)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Movie[0].duration)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model.Movie)
+        {
+            <tr>
+
+                <td>
+                    @Html.DisplayFor(modelItem => item.title)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.duration)
+                </td>
+                <td>
+                    <a asp-page="./Details" asp-route-id="@item.title">Details</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+
+
+
+@section scripts{
+
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+    <script>
+
+        $(function () {
+            $("#datepicker").datepicker();
+        });
+
+    </script>
+}
