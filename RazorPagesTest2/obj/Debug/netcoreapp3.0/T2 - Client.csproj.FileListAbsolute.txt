@@ -1,0 +1,38 @@
+C:\Users\karol\Desktop\important stuff\SEP exams\SEP 3\Tier 1 - Client\PrimeCinema\RazorPagesTest2\bin\Debug\netcoreapp3.0\appsettings.Development.json
+C:\Users\karol\Desktop\important stuff\SEP exams\SEP 3\Tier 1 - Client\PrimeCinema\RazorPagesTest2\bin\Debug\netcoreapp3.0\appsettings.json
+C:\Users\karol\Desktop\important stuff\SEP exams\SEP 3\Tier 1 - Client\PrimeCinema\RazorPagesTest2\bin\Debug\netcoreapp3.0\Content\jquery-ui-1.12.1.custom\package.json
+C:\Users\karol\Desktop\important stuff\SEP exams\SEP 3\Tier 1 - Client\PrimeCinema\RazorPagesTest2\bin\Debug\netcoreapp3.0\Properties\launchSettings.json
+C:\Users\karol\Desktop\important stuff\SEP exams\SEP 3\Tier 1 - Client\PrimeCinema\RazorPagesTest2\bin\Debug\netcoreapp3.0\T2 - Client.exe
+C:\Users\karol\Desktop\important stuff\SEP exams\SEP 3\Tier 1 - Client\PrimeCinema\RazorPagesTest2\bin\Debug\netcoreapp3.0\T2 - Client.deps.json
+C:\Users\karol\Desktop\important stuff\SEP exams\SEP 3\Tier 1 - Client\PrimeCinema\RazorPagesTest2\bin\Debug\netcoreapp3.0\T2 - Client.runtimeconfig.json
+C:\Users\karol\Desktop\important stuff\SEP exams\SEP 3\Tier 1 - Client\PrimeCinema\RazorPagesTest2\bin\Debug\netcoreapp3.0\T2 - Client.runtimeconfig.dev.json
+C:\Users\karol\Desktop\important stuff\SEP exams\SEP 3\Tier 1 - Client\PrimeCinema\RazorPagesTest2\bin\Debug\netcoreapp3.0\T2 - Client.dll
+C:\Users\karol\Desktop\important stuff\SEP exams\SEP 3\Tier 1 - Client\PrimeCinema\RazorPagesTest2\bin\Debug\netcoreapp3.0\T2 - Client.pdb
+C:\Users\karol\Desktop\important stuff\SEP exams\SEP 3\Tier 1 - Client\PrimeCinema\RazorPagesTest2\bin\Debug\netcoreapp3.0\T2 - Client.Views.dll
+C:\Users\karol\Desktop\important stuff\SEP exams\SEP 3\Tier 1 - Client\PrimeCinema\RazorPagesTest2\bin\Debug\netcoreapp3.0\T2 - Client.Views.pdb
+C:\Users\karol\Desktop\important stuff\SEP exams\SEP 3\Tier 1 - Client\PrimeCinema\RazorPagesTest2\bin\Debug\netcoreapp3.0\Newtonsoft.Json.dll
+C:\Users\karol\Desktop\important stuff\SEP exams\SEP 3\Tier 1 - Client\PrimeCinema\RazorPagesTest2\obj\Debug\netcoreapp3.0\staticwebassets\T2 - Client.StaticWebAssets.Manifest.cache
+C:\Users\karol\Desktop\important stuff\SEP exams\SEP 3\Tier 1 - Client\PrimeCinema\RazorPagesTest2\obj\Debug\netcoreapp3.0\staticwebassets\T2 - Client.StaticWebAssets.xml
+C:\Users\karol\Desktop\important stuff\SEP exams\SEP 3\Tier 1 - Client\PrimeCinema\RazorPagesTest2\obj\Debug\netcoreapp3.0\T2 - Client.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\karol\Desktop\important stuff\SEP exams\SEP 3\Tier 1 - Client\PrimeCinema\RazorPagesTest2\obj\Debug\netcoreapp3.0\T2 - Client.RazorAssemblyInfo.cache
+C:\Users\karol\Desktop\important stuff\SEP exams\SEP 3\Tier 1 - Client\PrimeCinema\RazorPagesTest2\obj\Debug\netcoreapp3.0\T2 - Client.RazorAssemblyInfo.cs
+C:\Users\karol\Desktop\important stuff\SEP exams\SEP 3\Tier 1 - Client\PrimeCinema\RazorPagesTest2\obj\Debug\netcoreapp3.0\T2 - Client.AssemblyInfoInputs.cache
+C:\Users\karol\Desktop\important stuff\SEP exams\SEP 3\Tier 1 - Client\PrimeCinema\RazorPagesTest2\obj\Debug\netcoreapp3.0\T2 - Client.AssemblyInfo.cs
+C:\Users\karol\Desktop\important stuff\SEP exams\SEP 3\Tier 1 - Client\PrimeCinema\RazorPagesTest2\obj\Debug\netcoreapp3.0\T2 - Client.TagHelpers.input.cache
+C:\Users\karol\Desktop\important stuff\SEP exams\SEP 3\Tier 1 - Client\PrimeCinema\RazorPagesTest2\obj\Debug\netcoreapp3.0\T2 - Client.TagHelpers.output.cache
+C:\Users\karol\Desktop\important stuff\SEP exams\SEP 3\Tier 1 - Client\PrimeCinema\RazorPagesTest2\obj\Debug\netcoreapp3.0\T2 - Client.RazorCoreGenerate.cache
+C:\Users\karol\Desktop\important stuff\SEP exams\SEP 3\Tier 1 - Client\PrimeCinema\RazorPagesTest2\obj\Debug\netcoreapp3.0\Razor\Pages\Calendar.cshtml.g.cs
+C:\Users\karol\Desktop\important stuff\SEP exams\SEP 3\Tier 1 - Client\PrimeCinema\RazorPagesTest2\obj\Debug\netcoreapp3.0\Razor\Pages\Error.cshtml.g.cs
+C:\Users\karol\Desktop\important stuff\SEP exams\SEP 3\Tier 1 - Client\PrimeCinema\RazorPagesTest2\obj\Debug\netcoreapp3.0\Razor\Pages\Index.cshtml.g.cs
+C:\Users\karol\Desktop\important stuff\SEP exams\SEP 3\Tier 1 - Client\PrimeCinema\RazorPagesTest2\obj\Debug\netcoreapp3.0\Razor\Pages\Movies.cshtml.g.cs
+C:\Users\karol\Desktop\important stuff\SEP exams\SEP 3\Tier 1 - Client\PrimeCinema\RazorPagesTest2\obj\Debug\netcoreapp3.0\Razor\Pages\Privacy.cshtml.g.cs
+C:\Users\karol\Desktop\important stuff\SEP exams\SEP 3\Tier 1 - Client\PrimeCinema\RazorPagesTest2\obj\Debug\netcoreapp3.0\Razor\Pages\Shared\_Layout.cshtml.g.cs
+C:\Users\karol\Desktop\important stuff\SEP exams\SEP 3\Tier 1 - Client\PrimeCinema\RazorPagesTest2\obj\Debug\netcoreapp3.0\Razor\Pages\Shared\_ValidationScriptsPartial.cshtml.g.cs
+C:\Users\karol\Desktop\important stuff\SEP exams\SEP 3\Tier 1 - Client\PrimeCinema\RazorPagesTest2\obj\Debug\netcoreapp3.0\Razor\Pages\_ViewImports.cshtml.g.cs
+C:\Users\karol\Desktop\important stuff\SEP exams\SEP 3\Tier 1 - Client\PrimeCinema\RazorPagesTest2\obj\Debug\netcoreapp3.0\Razor\Pages\_ViewStart.cshtml.g.cs
+C:\Users\karol\Desktop\important stuff\SEP exams\SEP 3\Tier 1 - Client\PrimeCinema\RazorPagesTest2\obj\Debug\netcoreapp3.0\T2 - Client.RazorTargetAssemblyInfo.cache
+C:\Users\karol\Desktop\important stuff\SEP exams\SEP 3\Tier 1 - Client\PrimeCinema\RazorPagesTest2\obj\Debug\netcoreapp3.0\T2 - Client.RazorTargetAssemblyInfo.cs
+C:\Users\karol\Desktop\important stuff\SEP exams\SEP 3\Tier 1 - Client\PrimeCinema\RazorPagesTest2\obj\Debug\netcoreapp3.0\T2 - Client.Views.pdb
+C:\Users\karol\Desktop\important stuff\SEP exams\SEP 3\Tier 1 - Client\PrimeCinema\RazorPagesTest2\obj\Debug\netcoreapp3.0\T2 - Client.csproj.CopyComplete
+C:\Users\karol\Desktop\important stuff\SEP exams\SEP 3\Tier 1 - Client\PrimeCinema\RazorPagesTest2\obj\Debug\netcoreapp3.0\T2 - Client.dll
+C:\Users\karol\Desktop\important stuff\SEP exams\SEP 3\Tier 1 - Client\PrimeCinema\RazorPagesTest2\obj\Debug\netcoreapp3.0\T2 - Client.pdb

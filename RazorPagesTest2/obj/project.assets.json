@@ -145,11 +145,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\karol\\Desktop\\important stuff\\C# (DNP)\\RazorPagesTest\\RazorPagesTest2\\RazorPagesTest2.csproj",
+      "projectUniqueName": "C:\\Users\\karol\\Desktop\\important stuff\\SEP exams\\SEP 3\\Tier 1 - Client\\PrimeCinema\\RazorPagesTest2\\RazorPagesTest2.csproj",
       "projectName": "RazorPagesTest2",
-      "projectPath": "C:\\Users\\karol\\Desktop\\important stuff\\C# (DNP)\\RazorPagesTest\\RazorPagesTest2\\RazorPagesTest2.csproj",
+      "projectPath": "C:\\Users\\karol\\Desktop\\important stuff\\SEP exams\\SEP 3\\Tier 1 - Client\\PrimeCinema\\RazorPagesTest2\\RazorPagesTest2.csproj",
       "packagesPath": "C:\\Users\\karol\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\karol\\Desktop\\important stuff\\C# (DNP)\\RazorPagesTest\\RazorPagesTest2\\obj\\",
+      "outputPath": "C:\\Users\\karol\\Desktop\\important stuff\\SEP exams\\SEP 3\\Tier 1 - Client\\PrimeCinema\\RazorPagesTest2\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\karol\\AppData\\Roaming\\NuGet\\NuGet.Config",

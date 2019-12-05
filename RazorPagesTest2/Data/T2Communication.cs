@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Net;
+using System.Net.Http;
 using System.Net.Sockets;
 using System.Text;
 using System.Threading.Tasks;
@@ -25,7 +26,7 @@ namespace RazorPagesTest2.Data
             NEW_MOVIES = new List<Movie>();
 
         }
-
+        /*
         public void startClient(String date)
         {
             
@@ -63,8 +64,19 @@ namespace RazorPagesTest2.Data
 
         }
 
+    */
 
 
+
+        public async Task<String> getData()
+        {
+            Console.WriteLine("Creating client!");
+            HttpClient client = new HttpClient();
+            Console.WriteLine("Client created! Sending request!");
+            String response = await client.GetStringAsync("https://localhost:44307/weatherforecast");
+      
+            return response;
+        }
 
 
     }
