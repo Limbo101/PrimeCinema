@@ -73,7 +73,7 @@ namespace RazorPagesTest2.Data
             Console.WriteLine("Creating client!");
             HttpClient client = new HttpClient();
             Console.WriteLine("Client created! Sending request!");
-            String response = await client.GetStringAsync("https://localhost:44307/weatherforecast");
+            String response = await client.GetStringAsync("https://localhost:44307/api/Movie");
       
             return response;
         }
