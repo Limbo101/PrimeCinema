@@ -13,19 +13,9 @@ using System.Threading.Tasks;
 
 namespace RazorPagesTest2.Data
 {
-    public class T2Communication
+    public class T2Communication // implement this with singleton
     {
-        private TcpClient client;
-        private String ip = "10.152.192.62";
-        private int port = 4545;
 
-        public List<Movie> NEW_MOVIES { get; set; }
-
-        public T2Communication()
-        {
-            NEW_MOVIES = new List<Movie>();
-
-        }
         /*
         public void startClient(String date)
         {
@@ -72,10 +62,25 @@ namespace RazorPagesTest2.Data
         {
             Console.WriteLine("Creating client!");
             HttpClient client = new HttpClient();
-            Console.WriteLine("Client created! Sending request!");
+            Console.WriteLine("Client created! Sending request!");  
             String response = await client.GetStringAsync("https://localhost:44307/api/Movie");
-      
+
             return response;
+        }
+
+        public async Task<String> POSTRegistrationData(String userName, String password, String confirmPassword, String email)
+        {
+            //String[] message = new String[4] { userName, password, confirmPassword , email };
+            String message = userName;
+        Console.WriteLine("Creating client!");
+            HttpClient client = new HttpClient();
+            Console.WriteLine("Sending registration data!");
+            StringContent stringContent = new StringContent(JsonConvert.SerializeObject(message));
+            Console.WriteLine(JsonConvert.SerializeObject(message));
+            Console.WriteLine("String content printed out!! (JSON)");
+            var response = await client.PostAsync("https://localhost:44307/api/Movie", (HttpContent)stringContent);
+            string result = response.Content.ReadAsStringAsync().Result;
+            return result;
         }
 
 

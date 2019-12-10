@@ -26,7 +26,7 @@ namespace RazorPagesTest2.Pages
         public async Task<IActionResult> OnPost()
         {
             Console.WriteLine("Getting and printing out data!");
-           
+            Console.WriteLine(date);
             String response = await communication.getData();
             Console.WriteLine(response);
 
@@ -35,10 +35,7 @@ namespace RazorPagesTest2.Pages
 
             Console.WriteLine("Loading movies II");
             
-            for (int i = 0; i < communication.NEW_MOVIES.Count; i++) // generate a temporary list of movies for testing purposes
-            {
-                Movie.Add(communication.NEW_MOVIES[i]);
-            }
+
 
             return Page();
         }

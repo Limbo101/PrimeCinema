@@ -1,0 +1,18 @@
+﻿@page
+@model RazorPagesTest2.Pages.RegisterModel
+@{
+}
+
+
+<form method="post">
+    @Html.TextBoxFor(model => model.userName, new { name = "userName", placeholder = "Username" })
+    <br />
+    @Html.TextBoxFor(model => model.password, new { name = "password", placeholder = "Password" })
+    <br />
+    @Html.TextBoxFor(model => model.confirmPassword, new { name = "confirmPassword", placeholder = "Confirm password" })
+    <br />
+    @Html.TextBoxFor(model => model.email, new { name = "email", placeholder = "Email address" })
+
+    <input type="button" , value="Register" , onclick="this.form.submit()" />
+</form>
+
