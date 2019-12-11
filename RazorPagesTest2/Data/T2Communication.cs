@@ -70,16 +70,23 @@ namespace RazorPagesTest2.Data
 
         public async Task<String> POSTRegistrationData(String userName, String password, String confirmPassword, String email)
         {
-            //String[] message = new String[4] { userName, password, confirmPassword , email };
-            String message = userName;
+            String[] message = new String[4] { userName, password, confirmPassword , email };
+            //String message = userName;
         Console.WriteLine("Creating client!");
             HttpClient client = new HttpClient();
             Console.WriteLine("Sending registration data!");
-            StringContent stringContent = new StringContent(JsonConvert.SerializeObject(message));
-            Console.WriteLine(JsonConvert.SerializeObject(message));
-            Console.WriteLine("String content printed out!! (JSON)");
-            var response = await client.PostAsync("https://localhost:44307/api/Movie", (HttpContent)stringContent);
-            string result = response.Content.ReadAsStringAsync().Result;
+            //StringContent stringContent = new StringContent(JsonConvert.SerializeObject(message));
+            var stringContent = new StringContent(JsonConvert.SerializeObject(message), Encoding.UTF8, "application/json");
+            
+            Console.WriteLine("Json serialized  content:"    +   JsonConvert.SerializeObject(message));
+        
+            Console.WriteLine("String   content printed out!!   (JSON)");
+            var response = await client.PostAsync("https://localhost:5003/api/Movie", stringContent);
+            Console.WriteLine("Works");
+            var result = response.Content.ReadAsStringAsync().Result;
+            Console.WriteLine("Works");
+            Console.WriteLine("Works");
+            Console.WriteLine(result);
             return result;
         }
 

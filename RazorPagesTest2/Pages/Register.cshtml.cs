@@ -31,7 +31,7 @@ namespace RazorPagesTest2.Pages
         {
             Console.WriteLine("Sending post request!");
             await communication.POSTRegistrationData(userName, password, confirmPassword, email);
-            Console.WriteLine("Post request sent!");
+
 
             return Page();
         }
