@@ -36,8 +36,8 @@ namespace RazorPagesTest2.Data
             return result;
         }
 
-        public async Task<String> POSTRegistrationData(String userName, String password, String confirmPassword, String email){
-            String[] message = new String[4] { userName, password, confirmPassword , email };
+        public async Task<String> POSTRegistrationData(String username, String password, String confirmPassword, String email){
+            String[] message = new String[4] { username, password, confirmPassword , email };
             HttpClient client = new HttpClient();
             var stringContent = new StringContent(JsonConvert.SerializeObject(message), Encoding.UTF8, "application/json");
             var response = await client.PostAsync("https://localhost:5003/api/Movie/register", stringContent);
@@ -46,15 +46,28 @@ namespace RazorPagesTest2.Data
             return result;
         }
 
-        public async Task<String> POSTLoginData(String userName, String password)
+        public async Task<String> POSTLoginData(String username, String password)
         {
-            String[] message = new String[2] { userName, password };
+            String[] message = new String[2] { username, password };
             HttpClient client = new HttpClient();
             var stringContent = new StringContent(JsonConvert.SerializeObject(message), Encoding.UTF8, "application/json");
             var response = await client.PostAsync("https://localhost:5003/api/Movie/login", stringContent);
             var result = response.Content.ReadAsStringAsync().Result;
             Console.WriteLine(result);
             return result;
+        }
+
+        public async Task<String> POSTBookingData(String username, String title, String hour, String date)
+        {
+
+            String[] message = new String[4] { username, title, date, hour };
+            HttpClient client = new HttpClient();
+            var stringContent = new StringContent(JsonConvert.SerializeObject(message), Encoding.UTF8, "application/json");
+            var response = await client.PostAsync("https://localhost:5003/api/Movie/booking", stringContent);
+            var result = response.Content.ReadAsStringAsync().Result;
+            Console.WriteLine(result);
+            return result;
+
         }
 
 

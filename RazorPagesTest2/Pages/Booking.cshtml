@@ -1,0 +1,24 @@
+﻿@page
+@model RazorPagesTest2.Pages.BookingModel
+@{
+}
+
+    <body>
+
+        <div class="wrapper">
+            <form asp-page-handler="book" method="post">
+                @Html.TextBoxFor(model => model.title, new { name = "title", placeholder = "title" })
+                <br />
+                @Html.TextBoxFor(model => model.username, new { name = "userName", placeholder = "Username" })
+                <br />
+                @Html.TextBoxFor(model => model.hour, new { name = "hour", placeholder = "hour" })
+                <br />
+                @Html.TextBoxFor(model => model.date, new { name = "date", placeholder = "date"})
+
+
+                <input type="button" , value="Book" , onclick="this.form.submit()" />
+            </form>
+        </div>
+
+
+    </body>

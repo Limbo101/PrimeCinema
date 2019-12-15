@@ -76,3 +76,4 @@ C:\Users\karol\Desktop\important stuff\SEP exams\SEP 3\Tier 1 - Client\PrimeCine
 C:\Users\karol\Desktop\important stuff\SEP exams\SEP 3\Tier 1 - Client\PrimeCinema\RazorPagesTest2\obj\Debug\netcoreapp3.0\RazorPagesTest2.dll
 C:\Users\karol\Desktop\important stuff\SEP exams\SEP 3\Tier 1 - Client\PrimeCinema\RazorPagesTest2\obj\Debug\netcoreapp3.0\RazorPagesTest2.pdb
 C:\Users\karol\Desktop\important stuff\SEP exams\SEP 3\Tier 1 - Client\PrimeCinema\RazorPagesTest2\obj\Debug\netcoreapp3.0\Razor\Pages\Register.cshtml.g.cs
+C:\Users\karol\Desktop\important stuff\SEP exams\SEP 3\Tier 1 - Client\PrimeCinema\RazorPagesTest2\obj\Debug\netcoreapp3.0\Razor\Pages\Booking.cshtml.g.cs
