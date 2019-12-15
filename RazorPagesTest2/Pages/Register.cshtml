@@ -2,17 +2,42 @@
 @model RazorPagesTest2.Pages.RegisterModel
 @{
 }
+    <head>
+        <style>
+            .wrapper {
+                background-color: rgb(201, 76, 76, 0.45);
+                margin-bottom:20px;
+            }
+        </style>
+    </head>
 
+    <body>
 
-<form method="post">
-    @Html.TextBoxFor(model => model.userName, new { name = "userName", placeholder = "Username" })
-    <br />
-    @Html.TextBoxFor(model => model.password, new { name = "password", placeholder = "Password" })
-    <br />
-    @Html.TextBoxFor(model => model.confirmPassword, new { name = "confirmPassword", placeholder = "Confirm password" })
-    <br />
-    @Html.TextBoxFor(model => model.email, new { name = "email", placeholder = "Email address" })
+        <div class="wrapper">
+            <form asp-page-handler="Login" method="post">
+                @Html.TextBoxFor(model => model.loginUsername, new { name = "", placeholder = "Username" })
+                <br />
+                @Html.PasswordFor(model => model.loginPassword, new { name = "password", placeholder = "Password" })
+                <input type="button" , value="Login" , onclick="this.form.submit()" />
+            </form>
+        </div>
 
-    <input type="button" , value="Register" , onclick="this.form.submit()" />
-</form>
+        <div  class="wrapper">
+            <form asp-page-handler="register" method="post">
+                @Html.TextBoxFor(model => model.registerUsername, new { name = "userName", placeholder = "Username" })
+                <br />
+                @Html.PasswordFor(model => model.registerPassword, new { name = "password", placeholder = "Password" })
+                <br />
+                @Html.PasswordFor(model => model.registerConfirmPassword, new { name = "confirmPassword", placeholder = "Confirm password" })
+                <br />
+                @Html.TextBoxFor(model => model.registerEmail, new { name = "email", placeholder = "Email address" })
+
+                <input type="button" , value="Register" , onclick="this.form.submit()" />
+            </form>
+        </div>
+        <div class="wrapper">
+            <p> Test text!!!!</p>
+        </div>
+    </body>
+
 

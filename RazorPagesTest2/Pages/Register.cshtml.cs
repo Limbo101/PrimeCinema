@@ -11,13 +11,17 @@ namespace RazorPagesTest2.Pages
     public class RegisterModel : PageModel
     {
         [BindProperty]
-        public String userName { get; set; }
+        public String registerUsername { get; set; }
         [BindProperty]
-        public String password { get; set; }
+        public String registerPassword { get; set; }
         [BindProperty]
-        public String confirmPassword { get; set; }
+        public String registerConfirmPassword { get; set; }
         [BindProperty]
-        public String email { get; set; }
+        public String registerEmail { get; set; }
+        [BindProperty]
+        public String loginUsername { get; set; }
+        [BindProperty]
+        public String loginPassword { get; set; }
 
 
         private T2Communication communication = new T2Communication();
@@ -27,12 +31,15 @@ namespace RazorPagesTest2.Pages
 
         }
 
-        public async Task<IActionResult> OnPost()
+        public async Task<IActionResult> OnPostRegister()
         {
-            Console.WriteLine("Sending post request!");
-            await communication.POSTRegistrationData(userName, password, confirmPassword, email);
+            await communication.POSTRegistrationData(registerUsername, registerPassword, registerConfirmPassword, registerEmail);
+            return Page();
+        }
 
-
+        public async Task<IActionResult> OnPostLogin()
+        {
+            await communication.POSTLoginData(loginUsername, loginPassword);
             return Page();
         }
 

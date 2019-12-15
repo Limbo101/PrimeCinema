@@ -18,8 +18,8 @@ namespace RazorPagesTest2.Pages
         public List<Movie> Movie = new List<Movie>();
 
         public async Task OnGet() 
-        {        // on get request (when you open the page probably
-            
+        {
+            communication.GETMovieData(date);
 
         }
 
@@ -27,13 +27,9 @@ namespace RazorPagesTest2.Pages
         {
             Console.WriteLine("Getting and printing out data!");
             Console.WriteLine(date);
-            String response = await communication.getData();
-            Console.WriteLine(response);
-
-
-
-
-            Console.WriteLine("Loading movies II");
+            communication.GETMovieData(date);
+            // String response = await communication.getData();
+            //Console.WriteLine(response);
             
 
 
