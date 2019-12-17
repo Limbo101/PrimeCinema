@@ -32,6 +32,7 @@ namespace RazorPagesTest2.Data
             Console.WriteLine("https://localhost:5003/api/Movie/date?date=" + date);
             var response = await client.GetAsync("https://localhost:5003/api/Movie/date?date="+date);
             var result = response.Content.ReadAsStringAsync().Result;
+            var deserialised  =  JsonConvert.DeserializeObject(result);
             Console.WriteLine(result);
             return result;
         }

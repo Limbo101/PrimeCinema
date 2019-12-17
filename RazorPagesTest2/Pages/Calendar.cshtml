@@ -7,11 +7,7 @@
 <link rel="stylesheet" href="/resources/demos/style.css">
 
 
-@using (Html.BeginForm(FormMethod.Post))
-{
 
-
-}
 
 <form method="post">
     @Html.TextBoxFor(model => model.date, new { @id = "datepicker", name = "date", onChange = "this.form.submit()" })

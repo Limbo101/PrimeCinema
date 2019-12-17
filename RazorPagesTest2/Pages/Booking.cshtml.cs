@@ -2,12 +2,15 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using RazorPagesTest2.Data;
 
+
 namespace RazorPagesTest2.Pages
 {
+    [Authorize]
     [BindProperties]
     public class BookingModel : PageModel
     {
@@ -19,6 +22,7 @@ namespace RazorPagesTest2.Pages
         public String title { get; set; }
         //public String duration;
 
+            
         public void OnGet()
         {
 
