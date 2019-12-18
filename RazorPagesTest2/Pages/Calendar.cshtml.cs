@@ -16,7 +16,7 @@ namespace RazorPagesTest2.Pages
         
         [BindProperty]
         public String date { get; set; }
-        private T2Communication communication = new T2Communication(); 
+        private T2Communication communication = T2Communication.getInstance();
         public List<Movie> Movie = new List<Movie>();
 
         public async Task<IActionResult> OnGet() 
@@ -24,7 +24,7 @@ namespace RazorPagesTest2.Pages
             String today = DateTime.Today.Month.ToString() + "/" + DateTime.Today.Day.ToString() + "/" + DateTime.Today.Year.ToString();
            Console.WriteLine(today);
             date = today;
-            communication.GETMovieData(date);
+            await communication.GETMovieData(date);
             return Page();
         }
 

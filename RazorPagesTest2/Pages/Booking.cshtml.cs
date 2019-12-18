@@ -14,7 +14,7 @@ namespace RazorPagesTest2.Pages
     [BindProperties]
     public class BookingModel : PageModel
     {
-        private T2Communication communication = new T2Communication();
+        private T2Communication communication = T2Communication.getInstance();
 
         public String username { get; set; }
         public String hour { get; set; }

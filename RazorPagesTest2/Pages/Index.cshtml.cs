@@ -27,8 +27,7 @@ namespace RazorPagesTest2.Pages
         public String loginPassword { get; set; }
 
 
-        private T2Communication communication = new T2Communication();
-
+        private T2Communication communication = T2Communication.getInstance();
         public async Task<IActionResult> OnGet()
         {
             if (User.Identity.IsAuthenticated) return RedirectToPage("Calendar");
