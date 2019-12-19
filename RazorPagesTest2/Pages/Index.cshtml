@@ -6,10 +6,7 @@
 
 <head>
     <style>
-        .wrapper {
-            background-color: rgb(201, 76, 76);
-            margin-bottom: 20px;
-        }
+
     </style>
 </head>
 
@@ -25,16 +22,18 @@
 
     }
 
-    <div class="wrapper">
+
         <form asp-page-handler="Login" method="post">
             @Html.TextBoxFor(model => model.loginUsername, new { name = "", placeholder = "Username" })
             <br />
             @Html.PasswordFor(model => model.loginPassword, new { name = "password", placeholder = "Password" })
             <input type="button" , value="Login" , onclick="this.form.submit()" />
         </form>
-    </div>
 
-    <div class="wrapper">
+    <br />
+    <br />
+    <br />
+
         <form asp-page-handler="register" method="post">
             @Html.TextBoxFor(model => model.registerUsername, new { name = "userName", placeholder = "Username" })
             <br />
@@ -46,8 +45,5 @@
 
             <input type="button" , value="Register" , onclick="this.form.submit()" />
         </form>
-    </div>
-    <div class="wrapper">
-        <p> Test text!!!!</p>
-    </div>
+
 </body>

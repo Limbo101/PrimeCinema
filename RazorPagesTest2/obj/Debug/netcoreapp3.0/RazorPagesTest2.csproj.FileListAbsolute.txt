@@ -62,7 +62,6 @@ C:\Users\karol\Desktop\important stuff\SEP exams\SEP 3\Tier 1 - Client\PrimeCine
 C:\Users\karol\Desktop\important stuff\SEP exams\SEP 3\Tier 1 - Client\PrimeCinema\RazorPagesTest2\obj\Debug\netcoreapp3.0\RazorPagesTest2.RazorCoreGenerate.cache
 C:\Users\karol\Desktop\important stuff\SEP exams\SEP 3\Tier 1 - Client\PrimeCinema\RazorPagesTest2\obj\Debug\netcoreapp3.0\Razor\Pages\Calendar.cshtml.g.cs
 C:\Users\karol\Desktop\important stuff\SEP exams\SEP 3\Tier 1 - Client\PrimeCinema\RazorPagesTest2\obj\Debug\netcoreapp3.0\Razor\Pages\Error.cshtml.g.cs
-C:\Users\karol\Desktop\important stuff\SEP exams\SEP 3\Tier 1 - Client\PrimeCinema\RazorPagesTest2\obj\Debug\netcoreapp3.0\Razor\Pages\Privacy.cshtml.g.cs
 C:\Users\karol\Desktop\important stuff\SEP exams\SEP 3\Tier 1 - Client\PrimeCinema\RazorPagesTest2\obj\Debug\netcoreapp3.0\Razor\Pages\Shared\_Layout.cshtml.g.cs
 C:\Users\karol\Desktop\important stuff\SEP exams\SEP 3\Tier 1 - Client\PrimeCinema\RazorPagesTest2\obj\Debug\netcoreapp3.0\Razor\Pages\Shared\_ValidationScriptsPartial.cshtml.g.cs
 C:\Users\karol\Desktop\important stuff\SEP exams\SEP 3\Tier 1 - Client\PrimeCinema\RazorPagesTest2\obj\Debug\netcoreapp3.0\Razor\Pages\_ViewImports.cshtml.g.cs

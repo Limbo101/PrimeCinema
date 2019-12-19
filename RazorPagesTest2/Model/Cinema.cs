@@ -10,6 +10,6 @@ namespace RazorPagesTest2.Model
         public String name { get; set; }
         public String location { get; set; }
         public List<Hall> halls { get; set; }
-        public int noSeatsPerHall { get; set; }
+        public int numOfSeatsPerHall { get; set; }
     }
 }

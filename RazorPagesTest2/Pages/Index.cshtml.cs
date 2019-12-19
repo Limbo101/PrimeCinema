@@ -44,8 +44,10 @@ namespace RazorPagesTest2.Pages
         public async Task<IActionResult> OnPostLogin()
         {
 
-            //if(await communication.POSTLoginData(loginUsername, loginPassword != OkObjectResult))
+            //if( != OkObjectResult))
             //{
+            await communication.POSTLoginData(loginUsername, loginPassword);
+
             var identity = new ClaimsIdentity(
                 new[] { new Claim(ClaimTypes.Name, loginUsername) },
                 CookieAuthenticationDefaults.AuthenticationScheme);
@@ -55,6 +57,7 @@ namespace RazorPagesTest2.Pages
             await HttpContext.SignInAsync(
                 CookieAuthenticationDefaults.AuthenticationScheme,
                 principal);
+
             //}
             return RedirectToAction("Register");
         }

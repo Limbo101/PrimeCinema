@@ -18,8 +18,6 @@ namespace RazorPagesTest2.Data
 
         private HttpClient client;
         private static T2Communication instance;
-        public List<Movie> movies { get; set; }
-        public int movieId { get; set; }
 
         private T2Communication()
         {
@@ -32,16 +30,9 @@ namespace RazorPagesTest2.Data
             return instance;
         }
 
-        public async Task<String> getData()
-        {
-            Console.WriteLine("Creating client!");
-            Console.WriteLine("Client created! Sending request!");  
-            String response = await client.GetStringAsync("https://localhost:44307/api/Movie");
-
-            return response;
-        }
 
         public async Task<List<Movie>> GETMovieData(String date){
+            List<Movie> movies = new List<Movie>();
             String message = date;
             Console.WriteLine("https://localhost:5003/api/Movie/date?date=" + date);
             var response = await client.GetAsync("https://localhost:5003/api/Movie/date?date="+date);  //
@@ -66,7 +57,8 @@ namespace RazorPagesTest2.Data
             var stringContent = new StringContent(JsonConvert.SerializeObject(message), Encoding.UTF8, "application/json");
             var response = await client.PostAsync("https://localhost:5003/api/Movie/login", stringContent);
             var result = response.Content.ReadAsStringAsync().Result;
-            Console.WriteLine(result);
+            Console.WriteLine(response.Content.ReadAsStringAsync());
+            Console.WriteLine("Printing out login result: "+result);
             return result;
         }
 

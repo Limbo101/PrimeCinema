@@ -20,7 +20,6 @@ namespace RazorPagesTest2.Pages
         public String hour { get; set; }
         public String date { get; set; }
         public String title { get; set; }
-        //public String duration;
 
             
         public void OnGet()
