@@ -15,6 +15,8 @@ namespace RazorPagesTest2.Data
 {
     public class T2Communication // implement this with singleton
     {
+        public List<Movie> movies { get; set; }
+        public int movieId { get; set; }
 
         public async Task<String> getData()
         {
@@ -26,15 +28,15 @@ namespace RazorPagesTest2.Data
             return response;
         }
 
-        public async Task<String> GETMovieData(String date){
+        public async Task<List<Movie>> GETMovieData(String date){
             String message = date;
             HttpClient client = new HttpClient();
             Console.WriteLine("https://localhost:5003/api/Movie/date?date=" + date);
-            var response = await client.GetAsync("https://localhost:5003/api/Movie/date?date="+date);
+            var response = await client.GetAsync("https://localhost:5003/api/Movie/date?date="+date);  //
             var result = response.Content.ReadAsStringAsync().Result;
-            var deserialised  =  JsonConvert.DeserializeObject(result);
+            movies =  JsonConvert.DeserializeObject<List<Movie>>(result);
             Console.WriteLine(result);
-            return result;
+            return movies;
         }
 
         public async Task<String> POSTRegistrationData(String username, String password, String confirmPassword, String email){
@@ -60,7 +62,6 @@ namespace RazorPagesTest2.Data
 
         public async Task<String> POSTBookingData(String username, String title, String hour, String date)
         {
-
             String[] message = new String[4] { username, title, date, hour };
             HttpClient client = new HttpClient();
             var stringContent = new StringContent(JsonConvert.SerializeObject(message), Encoding.UTF8, "application/json");
@@ -68,9 +69,6 @@ namespace RazorPagesTest2.Data
             var result = response.Content.ReadAsStringAsync().Result;
             Console.WriteLine(result);
             return result;
-
         }
-
-
     }
 }

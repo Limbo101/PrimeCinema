@@ -22,29 +22,35 @@
         <tr>
 
             <th>
-                @Html.DisplayNameFor(model => model.Movie[0].title)
+                @Html.DisplayNameFor(model => model.movies[0].title)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Movie[0].duration)
+                @Html.DisplayNameFor(model => model.movies[0].hour)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.movies[0].duration)
             </th>
             <th></th>
         </tr>
     </thead>
     <tbody>
-        @foreach (var item in Model.Movie)
+        @foreach (var item in Model.movies)
         {
-            <tr>
+        <tr>
 
-                <td>
-                    @Html.DisplayFor(modelItem => item.title)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.duration)
-                </td>
-                <td>
-                    <a asp-page="./Details" asp-route-id="@item.title">Details</a>
-                </td>
-            </tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.title)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.hour)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.duration)
+            </td>
+            <td>
+                <a asp-page="./Booking" asp-route-id="@item.title">Booking</a>
+            </td>
+        </tr>
         }
     </tbody>
 </table>

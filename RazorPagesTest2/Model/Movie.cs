@@ -7,16 +7,8 @@ namespace RazorPagesTest2.Model
 {
     public class Movie
     {
-
         public string title { get; set; }
-
-        public Cinema cinema { get; set; }
-
-        public int date { get; set; }
-
-
-        public int duration { get; set; }
-
-
+        public string hour { get; set; }
+        public string duration { get; set; }
     }
 }

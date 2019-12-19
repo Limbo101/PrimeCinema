@@ -13,31 +13,23 @@ namespace RazorPagesTest2.Pages
     [Authorize]
     public class CalendarModel : PageModel
     {
-        
+        public List<Movie> movies;
         [BindProperty]
         public String date { get; set; }
         private T2Communication communication = new T2Communication(); 
-        public List<Movie> Movie = new List<Movie>();
 
         public async Task<IActionResult> OnGet() 
         {
             String today = DateTime.Today.Month.ToString() + "/" + DateTime.Today.Day.ToString() + "/" + DateTime.Today.Year.ToString();
-           Console.WriteLine(today);
             date = today;
-            communication.GETMovieData(date);
+            movies = await communication.GETMovieData(date);
             return Page();
         }
 
         public async Task<IActionResult> OnPost()
         {
-            Console.WriteLine("Getting and printing out data!");
             Console.WriteLine(date);
-            communication.GETMovieData(date);
-            // String response = await communication.getData();
-            //Console.WriteLine(response);
-            
-
-
+            movies = await communication.GETMovieData(date);
             return Page();
         }
 
