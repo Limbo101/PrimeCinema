@@ -16,7 +16,7 @@ namespace RazorPagesTest2.Pages
         public List<Movie> movies;
         [BindProperty]
         public String date { get; set; }
-        private T2Communication communication = new T2Communication(); 
+        private T2Communication communication = T2Communication.getInstance(); 
 
         public async Task<IActionResult> OnGet() 
         {
@@ -30,6 +30,13 @@ namespace RazorPagesTest2.Pages
         {
             Console.WriteLine(date);
             movies = await communication.GETMovieData(date);
+            return Page();
+        }
+
+        public async Task<IActionResult> OnPostBook()
+        {
+
+
             return Page();
         }
 
