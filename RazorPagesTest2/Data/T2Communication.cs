@@ -56,10 +56,11 @@ namespace RazorPagesTest2.Data
             String[] message = new String[2] { username, password };
             var stringContent = new StringContent(JsonConvert.SerializeObject(message), Encoding.UTF8, "application/json");
             var response = await client.PostAsync("https://localhost:5003/api/Movie/login", stringContent);
-            var result = response.Content.ReadAsStringAsync().Result;
-            Console.WriteLine(response.Content.ReadAsStringAsync());
-            Console.WriteLine("Printing out login result: "+result);
-            return result;
+            String result = response.Content.ReadAsStringAsync().Result;
+            var deserialised = JsonConvert.DeserializeObject<string>(result);
+            Console.WriteLine(result);
+            Console.WriteLine("Printing out login result: "+deserialised);
+            return deserialised;
         }
 
         public async Task<String> POSTBookingData(String username, String title, String hour, String date)

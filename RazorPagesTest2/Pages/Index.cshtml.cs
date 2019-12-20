@@ -44,22 +44,24 @@ namespace RazorPagesTest2.Pages
         public async Task<IActionResult> OnPostLogin()
         {
 
-            //if( != OkObjectResult))
-            //{
-            await communication.POSTLoginData(loginUsername, loginPassword);
+            if("OK".Equals(await communication.POSTLoginData(loginUsername, loginPassword)))  
+            {
+                var identity = new ClaimsIdentity(
+             new[] { new Claim(ClaimTypes.Name, loginUsername) },
+             CookieAuthenticationDefaults.AuthenticationScheme);
 
-            var identity = new ClaimsIdentity(
-                new[] { new Claim(ClaimTypes.Name, loginUsername) },
-                CookieAuthenticationDefaults.AuthenticationScheme);
+                var principal = new ClaimsPrincipal(identity);
 
-            var principal = new ClaimsPrincipal(identity);
+                await HttpContext.SignInAsync(
+                    CookieAuthenticationDefaults.AuthenticationScheme,
+                    principal);
+                return RedirectToAction("Register");
+            }
 
-            await HttpContext.SignInAsync(
-                CookieAuthenticationDefaults.AuthenticationScheme,
-                principal);
 
-            //}
-            return RedirectToAction("Register");
+            return Page();
+            
+            
         }
     }
 }
